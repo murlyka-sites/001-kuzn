@@ -1,7 +1,7 @@
 {
-  "name": "Project-Template-Generator",
+  "name": "001-kuzn",
   "version": "1.0.0",
-  "description": "",
+  "description": "landing page",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -16,5 +16,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Millok Murlyka",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murlyka-sites/001-kuzn.git"
+  },
+  "keywords": [
+    "landing",
+    "page"
+  ],
+  "bugs": {
+    "url": "https://github.com/murlyka-sites/001-kuzn/issues"
+  },
+  "homepage": "https://github.com/murlyka-sites/001-kuzn#readme"
 }
