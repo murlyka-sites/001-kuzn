@@ -27,16 +27,25 @@ $(document).ready(function() {
 		$.fancybox("#call", {padding: 0});
 	});
 
-	$(".shop__item").click(function() {
-		var text = trim($(this).find(".shop__item-desc").text()).replace(/ +/g," ");
-		$(".input--text").val(text);
-		$.fancybox("#call", {padding: 0});
-	});
+	// $(".shop__item").click(function() {
+	// 	var text = trim($(this).find(".shop__item-desc").text()).replace(/ +/g," ");
+	// 	$(".input--text").val(text);
+	// 	$.fancybox("#call", {padding: 0});
+	// });
 
 	$(".smithy__item").click(function() {
-		var text = trim($(this).find(".smithy__item-desc").text()).replace(/ +/g," ");
-		$(".input--text").val(text);
-		$.fancybox("#call", {padding: 0});
+		// var text = trim($(this).find(".smithy__item-desc").text()).replace(/ +/g," ");
+		// $(".input--text").val(text);
+		// $.fancybox("#call", {padding: 0});
+
+		var top = $("#shop").offset().top - 45;
+		$("html, body").animate({scrollTop: top},"slow")
+
+		$(".nav__container").removeClass("open");
+		return false;
+
+
+
 	});
 
 	$(".input--phone").mask("+7 (999) 999-99-99");
@@ -52,18 +61,36 @@ $(document).ready(function() {
 		}
 	});
 
+	$(".shop__item").click(function() {
+		var url = $(this).data("url"),
+			$frame = $("<iframe></iframe>"),
+			$close = $("<div class='back-site'><div class='back-site__title'>Вернуться на <br/> gurukovki.ru </div></div>");
+
+		$frame.addClass("frame");
+		$frame.attr("src", url);
+		$("body").addClass("onframe");
+
+		$("body").append($frame, $close);
+
+		$close.click(function(){
+			$frame.remove();
+			$close.remove();
+			$("body").removeClass("onframe");
+		});
+	});
+
 	$("#toTop").scrollToTop();
 
 	ymaps.ready(function () {
 	    var myMap = new ymaps.Map('map', {
-		        center: [55.14256294125289,37.47635545713374],
+		        center: [[55.14164456956634,37.4789084999999]],
 		        zoom: 15,
 		        controls: []
 		        
 		    }, {
 		        searchControlProvider: 'yandex#search'
 		    }),
-		    myPlacemark = new ymaps.Placemark([55.14256294125289,37.47635545713374], {
+		    myPlacemark = new ymaps.Placemark([[55.14164456956634,37.4789084999999]], {
 		        balloonContent: ''
 		    }, {
 		        preset: 'islands',
@@ -72,7 +99,7 @@ $(document).ready(function() {
 
 		myMap.geoObjects.add(myPlacemark);
 		myMap.disableDragging()
-	});	
+	});
 });
 
 $(window).on('load', function() {
@@ -80,6 +107,8 @@ $(window).on('load', function() {
 		new WOW().init();
 	}
 });
+
+
 
 function trim(str, charlist) {
 	charlist = !charlist ? ' \\s\xA0' : charlist.replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '\$1');

@@ -5,6 +5,10 @@
 @import "inc/variables.less";
 @import "../bower/bootstrap/less/mixins.less";
 
+html, body {
+	height: 100%;	
+}
+
 :focus {
 	outline: none;
 }
@@ -411,6 +415,7 @@ table {
 
 	&__item {
 		margin: 0 auto 35px;
+		cursor: pointer;
 		
 		@media (min-width: @screen-sm-min) {
 			width: 225px;
@@ -764,3 +769,114 @@ table {
 		opacity: 1;
 	}
 } 
+
+.onframe {
+	overflow: hidden;
+	
+	.up {
+		display: none !important;
+	}
+
+	.page {
+		display: none;
+	}
+
+	.frame {
+		width: 100%;
+		height: 100%;
+		// background: black;
+	}
+}
+
+ body {
+	padding-bottom: 80px;
+
+	@media (min-width: 768px) {
+		padding-bottom: 0;
+	}
+}
+
+@a: #ffde8a;
+@b: rgba(133,107,88, 1);
+  
+.back-site {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10001;
+	height: 80px;
+	padding: 10px 0;
+	background-color: @a;
+	border-top: 10px solid white;
+	border-bottom: 10px solid white;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+	color: #2f2f2f;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	
+	@media (min-width: 768px) {
+		left: auto;
+		right: 25px;
+		bottom: 50px;
+		width: 160px;
+		height: 160px;
+		padding: 50px 0;
+		border-radius: 50%;
+		border: 10px solid white;
+	}
+
+	&:hover {
+		background: @b;
+		color: white;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+	}
+
+	&:before {
+		.i-back-site-left();
+		left: 20px;
+		top: 10px;
+		
+		@media (min-width: 768px) {
+			.i-back-site-top();
+			top: 13px;
+			left: 50%;
+			margin-left: -18px;
+		}
+	}
+
+	&:after {
+		.i-back-site-right();
+		right: 20px;
+		top: 10px;
+		
+		@media (min-width: 768px) {
+			.i-back-site-bottom();
+			top: auto;
+			bottom: 20px;
+			left: 50%;
+			margin-left: -18px;
+		}
+	}
+}
+
+
+@keyframes blink {
+	from {
+		background-color: @a;
+		color: #2f2f2f;
+	}
+
+	to {
+		background-color: @b;
+		color: white;
+	}
+}
