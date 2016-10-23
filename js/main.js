@@ -82,23 +82,22 @@ $(document).ready(function() {
 	$("#toTop").scrollToTop();
 
 	ymaps.ready(function () {
-	    var myMap = new ymaps.Map('map', {
-		        center: [[55.14164456956634,37.4789084999999]],
-		        zoom: 15,
-		        controls: []
-		        
-		    }, {
-		        searchControlProvider: 'yandex#search'
-		    }),
-		    myPlacemark = new ymaps.Placemark([[55.14164456956634,37.4789084999999]], {
-		        balloonContent: ''
-		    }, {
-		        preset: 'islands',
-		        iconColor: '#543621'
+		var myMap = new ymaps.Map('map', {
+				center: [55.14164456956634,37.4789084999999],
+				zoom: 15,
+				controls: []
+
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark([55.14164456956634,37.4789084999999], {
+				balloonContent: ''
+			}, {
+				preset: 'islands',
+				iconColor: '#543621'
 		    });
 
 		myMap.geoObjects.add(myPlacemark);
-		myMap.disableDragging()
 	});
 });
 
