@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,300&amp;subset=latin,cyrillic"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css"/>
-    <link rel="stylesheet" href="bower/fancybox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
     <!-- Yandex.Metrika counter-->
     <script type="text/javascript">
@@ -66,14 +66,14 @@
           </div>
         </div>
       </nav>
-      <main id="main" class="main">
+      <main class="main" id="main">
         <header class="header">
           <div class="container">
             <div class="row">
-              <div class="col-sm-4 col-lg-4"><img src="images/logo.png" width="297" height="60" class="header__logo wow fadeInLeft"/></div>
+              <div class="col-sm-4 col-lg-4"><img class="header__logo wow fadeInLeft" src="images/logo.png" width="297" height="60"/></div>
               <div class="col-sm-8 col-lg-7 col-lg-offset-1">
                 <div class="header__contacts contacts">
-                  <div data-wow-delay="0.2s" class="contacts__side contacts__side-left wow fadeInLeft">
+                  <div class="contacts__side contacts__side-left wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="contacts__phone">
                       <div class="i-phone contacts__icon"></div>8 (800) 505 49 85
                     </div>
@@ -81,7 +81,7 @@
                       <div class="i-mail contacts__icon"></div>pismo@gurukovki.ru
                     </div>
                   </div>
-                  <div data-wow-delay="0.4s" class="contacts__side contacts__side-right wow fadeInLeft"><a href="#call" class="btn contacts__btn fancy">Обратный звонок</a><a href="#partners" class="btn contacts__btn fancy">Дружество</a></div>
+                  <div class="contacts__side contacts__side-right wow fadeInLeft" data-wow-delay="0.4s"><a class="btn contacts__btn" href="#call" data-fancybox="data-fancybox">Обратный звонок</a><a class="btn contacts__btn" href="#partners" data-fancybox="data-fancybox">Дружество</a></div>
                 </div>
               </div>
             </div>
@@ -91,15 +91,15 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="main__place">
-                <h1 data-wow-delay="0.2s" class="main__heading wow fadeInDown">Кузнечное ремесло – дело древнее, серьёзное!</h1>
-                <p data-wow-delay="0.4s" class="wow fadeInLeft">Потому не привыкли мы красивых слов о себе расписывать. Настоящую красоту мы из металлов создаём. Коли Вы уже про нас наслышаны, да знаете, что надобно – звонок обратный закажите, там и сговоримся.</p>
-                <div data-wow-delay="0.6s" class="wow fadeInUp"><a href="#call" class="btn fancy btn-md main__btn">Сговориться</a></div>
+                <h1 class="main__heading wow fadeInDown" data-wow-delay="0.2s">Кузнечное ремесло – дело древнее, серьёзное!</h1>
+                <p class="wow fadeInLeft" data-wow-delay="0.4s">Потому не привыкли мы красивых слов о себе расписывать. Настоящую красоту мы из металлов создаём. Коли Вы уже про нас наслышаны, да знаете, что надобно – звонок обратный закажите, там и сговоримся.</p>
+                <div class="wow fadeInUp" data-wow-delay="0.6s"><a class="btn btn-md main__btn" href="#call" data-fancybox="">Сговориться</a></div>
               </div>
             </div>
           </div>
         </div>
       </main>
-      <div id="smithy" class="smithy">
+      <div class="smithy" id="smithy">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
@@ -115,19 +115,19 @@
                     </div>
                     <figcaption class="smithy__item-desc">Перила и ограждения лестничные</figcaption>
                   </figure>
-                  <figure data-wow-delay="0.2s" class="smithy__item wow fadeInLeft">
+                  <figure class="smithy__item wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="smithy__item-pr">
                       <div class="smithy__item-icon i-smithy-icon-2"></div>
                     </div>
                     <figcaption class="smithy__item-desc">Мебель и предметы интерьера</figcaption>
                   </figure>
-                  <figure data-wow-delay="0.4s" class="smithy__item wow fadeInLeft">
+                  <figure class="smithy__item wow fadeInLeft" data-wow-delay="0.4s">
                     <div class="smithy__item-pr">
                       <div class="smithy__item-icon i-smithy-icon-3"></div>
                     </div>
                     <figcaption class="smithy__item-desc">Ворота, двери и калитки</figcaption>
                   </figure>
-                  <figure data-wow-delay="0.6s" class="smithy__item wow fadeInLeft">
+                  <figure class="smithy__item wow fadeInLeft" data-wow-delay="0.6s">
                     <div class="smithy__item-pr">
                       <div class="smithy__item-icon i-smithy-icon-4"></div>
                     </div>
@@ -141,13 +141,13 @@
                     </div>
                     <figcaption class="smithy__item-desc">Решётки на окна</figcaption>
                   </figure>
-                  <figure data-wow-delay="0.2s" class="smithy__item wow fadeInLeft">
+                  <figure class="smithy__item wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="smithy__item-pr">
                       <div class="smithy__item-icon i-smithy-icon-6"></div>
                     </div>
                     <figcaption class="smithy__item-desc">Козырьки и навесы</figcaption>
                   </figure>
-                  <figure data-wow-delay="0.4s" class="smithy__item wow fadeInLeft">
+                  <figure class="smithy__item wow fadeInLeft" data-wow-delay="0.4s">
                     <div class="smithy__item-pr">
                       <div class="smithy__item-icon i-smithy-icon-7"></div>
                     </div>
@@ -161,7 +161,7 @@
                     </div>
                     <figcaption class="smithy__item-desc">Малые архитектурные формы</figcaption>
                   </figure>
-                  <figure data-wow-delay="0.2s" class="smithy__item wow fadeInLeft">
+                  <figure class="smithy__item wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="smithy__item-pr">
                       <div class="smithy__item-icon i-smithy-icon-9"></div>
                     </div>
@@ -172,12 +172,12 @@
             </div>
             <div class="col-xs-12">
               <p class="smithy__desc wow fadeInLeft">Все эти виды кованых изделий мы изготовим с учётом Ваших надобностей и пожеланий. И даже если искомого здесь не увидели, скажите нам о желании – выкуем!</p>
-              <div class="wow fadeInUp"><a href="#call" class="btn fancy btn-md smithy__btn">Сказать о желаемом</a></div>
+              <div class="wow fadeInUp"><a class="btn btn-md smithy__btn" href="#call" data-fancybox="">Сказать о желаемом</a></div>
             </div>
           </div>
         </div>
       </div>
-      <div id="price" class="price">
+      <div class="price" id="price">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -218,12 +218,12 @@
                 </tr>
               </table>
               <p class="price__desc wow fadeInLeft">А замеры, доставку и монтаж изделий мы и вовсе бесплатно осуществляем. Так что ежели нужно точную стоимость рассчитать – расскажите, что да как. Высчитаем на расстоянии, а то и вовсе кузнеца учёного на замеры да расчёты пришлём бесплатно. И что ещё немаловажно – названная цена на деле не вырастет, мы слово держим</p>
-              <div class="wow fadeInUp"><a href="#call" class="btn fancy btn-md price__btn">Рассчитать</a></div>
+              <div class="wow fadeInUp"><a class="btn btn-md price__btn" href="#call" data-fancybox="">Рассчитать</a></div>
             </div>
           </div>
         </div>
       </div>
-      <div id="shop" class="shop">
+      <div class="shop" id="shop">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
@@ -233,12 +233,12 @@
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0s" data-url="http://art-gruppa.com/perila-reshetki/perila.html" class="shop__item wow fadeInLeft"><img src="images/shop/1.jpg" alt="Перила и ограждения лестничные" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0s" data-url="http://art-gruppa.com/perila-reshetki/perila.html"><img class="shop__item-pr" src="images/shop/1.jpg" alt="Перила и ограждения лестничные"/>
                 <figcaption class="shop__item-desc">Перила и ограждения лестничные</figcaption>
               </figure>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0.2s" data-url="http://art-gruppa.com/mebel-interer/mebel.html" class="shop__item wow fadeInLeft"><img src="images/shop/2.jpg" alt="Мебель и предметы интерьера" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0.2s" data-url="http://art-gruppa.com/mebel-interer/mebel.html"><img class="shop__item-pr" src="images/shop/2.jpg" alt="Мебель и предметы интерьера"/>
                 <figcaption class="shop__item-desc">
                   Мебель и предметы
                   интерьера
@@ -246,32 +246,32 @@
               </figure>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0.4s" data-url="http://art-gruppa.com/zabory-vorota/vorota.html" class="shop__item wow fadeInLeft"><img src="images/shop/3.jpg" alt="Ворота, двери и калитки" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0.4s" data-url="http://art-gruppa.com/zabory-vorota/vorota.html"><img class="shop__item-pr" src="images/shop/3.jpg" alt="Ворота, двери и калитки"/>
                 <figcaption class="shop__item-desc">Ворота, двери и калитки</figcaption>
               </figure>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0s" data-url="http://art-gruppa.com/metallokonstruktsiya/kessony.html" class="shop__item wow fadeInLeft"><img src="images/shop/4.jpg" alt="Металлоконструкции" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0s" data-url="http://art-gruppa.com/metallokonstruktsiya/kessony.html"><img class="shop__item-pr" src="images/shop/4.jpg" alt="Металлоконструкции"/>
                 <figcaption class="shop__item-desc">Металлоконструкции</figcaption>
               </figure>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0.2s" data-url="http://art-gruppa.com/perila-reshetki/reshetki.html" class="shop__item wow fadeInLeft"><img src="images/shop/5.jpg" alt="Решётки на окна" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0.2s" data-url="http://art-gruppa.com/perila-reshetki/reshetki.html"><img class="shop__item-pr" src="images/shop/5.jpg" alt="Решётки на окна"/>
                 <figcaption class="shop__item-desc">Решётки на окна</figcaption>
               </figure>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0.4s" data-url="http://art-gruppa.com/kozyrki-navesy/kozyrki.html" class="shop__item wow fadeInLeft"><img src="images/shop/6.jpg" alt="Козырьки и навесы" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0.4s" data-url="http://art-gruppa.com/kozyrki-navesy/kozyrki.html"><img class="shop__item-pr" src="images/shop/6.jpg" alt="Козырьки и навесы"/>
                 <figcaption class="shop__item-desc">Козырьки и навесы</figcaption>
               </figure>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0s" data-url="http://art-gruppa.com/besedki-mangaly/mangaly.html" class="shop__item wow fadeInLeft"><img src="images/shop/7.jpg" alt="Ограждения балконные" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0s" data-url="http://art-gruppa.com/besedki-mangaly/mangaly.html"><img class="shop__item-pr" src="images/shop/7.jpg" alt="Ограждения балконные"/>
                 <figcaption class="shop__item-desc">Мангалы</figcaption>
               </figure>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0.2s" data-url="http://art-gruppa.com/mebel-interer/interer.html" class="shop__item wow fadeInLeft"><img src="images/shop/8.jpg" alt="Малые архитектурные формы" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0.2s" data-url="http://art-gruppa.com/mebel-interer/interer.html"><img class="shop__item-pr" src="images/shop/8.jpg" alt="Малые архитектурные формы"/>
                 <figcaption class="shop__item-desc">
                   Малые архитектурные
                   формы
@@ -279,7 +279,7 @@
               </figure>
             </div>
             <div class="col-xs-12 col-sm-4">
-              <figure data-wow-delay="0.4s" data-url="http://art-gruppa.com/zabory-vorota/kovanye-zabory.html" class="shop__item wow fadeInLeft"><img src="images/shop/9.jpg" alt="Заборы и газонные ограждения" class="shop__item-pr"/>
+              <figure class="shop__item wow fadeInLeft" data-wow-delay="0.4s" data-url="http://art-gruppa.com/zabory-vorota/kovanye-zabory.html"><img class="shop__item-pr" src="images/shop/9.jpg" alt="Заборы и газонные ограждения"/>
                 <figcaption class="shop__item-desc">
                   Заборы и газонные
                   ограждения
@@ -290,20 +290,20 @@
         </div>
       </div>
       <div class="about_and_reviews">
-        <div id="about" class="about">
+        <div class="about" id="about">
           <div class="container">
             <div class="row">
               <div class="col-xs-12">
                 <div class="about__container">
                   <h1 class="decor-heading decor-heading-light about__heading wow fadeInDown">Кратко о нас</h1>
                   <p class="about__slogan wow fadeInLeft">Кузнецы мы. Куём столько лет, что пальцев на руках не хватит. Ремеслом овладели в совершенстве, но пыла к делу не теряем, вкладываемся в каждое изделие, оттого и люди к нам раз за разом приходят, да знакомых приводят. И мы к ним как к родным относимся! Про вознаграждение говорили уже. Разве что про крупные заказы неупомянули – на них мы скидки приятные делаем. Добавить-то особо и нечего. Вы лучше спрашивайте, людей послушайте, или же к нам в кузницу приезжайте – сами всё без слов поймёте!</p>
-                  <div class="wow fadeInUp"><a href="#call" class="btn fancy btn-md about__btn">Спросить</a></div>
+                  <div class="wow fadeInUp"><a class="btn fancy btn-md about__btn" href="#call">Спросить</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="reviews" class="reviews">
+        <div class="reviews" id="reviews">
           <div class="container">
             <div class="row">
               <div class="col-xs-12">
@@ -339,46 +339,44 @@
           </div>
         </div>
       </div>
-      <div id="map" class="map">
+      <div class="map" id="map">
         <header class="map__head">
           <h1 class="decor-heading map__heading wow fadeInDown">Местонахождение</h1>
           <p class="map__slogan wow fadeInLeft">Найти нашу кузницу возможно в Московская обл., Чеховский р-н, Чехов, ул. Заводская д.1. стр.1<br/>Будем рады Вас видеть!</p>
         </header>
-        <div id="map-content" class="map__content"></div>
+        <div class="map__content" id="map-content"></div>
       </div>
       <footer class="foo">© 2016 Гуруковки. Все права защищены</footer>
     </div>
     <div class="hidden">
-      <div id="call" class="popup">
+      <div class="popup" id="call">
         <form action="mail.php" method="post">
           <h2 class="popup__heading">Обратный звонок</h2>
-          <input type="text" placeholder="Имя" name="name" required="required" class="input--name"/>
-          <input type="text" placeholder="Телефон" name="phone" required="required" class="input--phone"/>
-          <input type="text" placeholder="Что заказываем?" name="text" required="required" class="input--text"/>
-          <button type="submit" class="btn popup__btn">Отправить</button>
+          <input class="input--name" type="text" placeholder="Имя" name="name" required="required"/>
+          <input class="input--phone" type="text" placeholder="Телефон" name="phone" required="required"/>
+          <input class="input--text" type="text" placeholder="Что заказываем?" name="text" required="required"/>
+          <button class="btn popup__btn" type="submit">Отправить</button>
         </form>
       </div>
-      <div id="partners" class="popup">
+      <div class="popup" id="partners">
         <form action="mail.php" method="post">
           <p>Желаете изделия наши на постоянной основе да неповторимых условиях заказывать? Это можно. Детали устно стоит обсудить</p>
-          <input type="text" placeholder="Имя" name="name" required="required" class="input--name"/>
-          <input type="text" placeholder="Телефон" name="phone" required="required" class="input--phone"/>
-          <button type="submit" class="btn popup__btn">Отправить</button>
+          <input class="input--name" type="text" placeholder="Имя" name="name" required="required"/>
+          <input class="input--phone" type="text" placeholder="Телефон" name="phone" required="required"/>
+          <button class="btn popup__btn" type="submit">Отправить</button>
         </form>
       </div>
-      <div id="success" class="popup">
+      <div class="popup" id="success">
         <h2 class="popup__heading">
-           
-          Спасибо!<br/>Ожидайте звонка!
-        </h2>
+           Спасибо!<br/>Ожидайте звонка!</h2>
       </div>
-    </div><a id="toTop" href="#" class="up"></a>
-    <script src="bower/jquery/dist/jquery.min.js"></script>
-    <script src="bower/slick-carousel/slick/slick.min.js"></script>
-    <script src="bower/fancybox/source/jquery.fancybox.js"></script>
-    <script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+    </div><a class="up" id="toTop" href="#"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js	"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="http://malsup.github.io/jquery.form.js"></script>
-    <script src="bower/wow/dist/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ismobilejs/0.4.0/isMobile.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>

@@ -1,12 +1,12 @@
 @import "inc/fonts.less";
 @import "spritesmith/sprite.less";
-@import "../bower/bootstrap/less/variables.less";
+@import "../node_modules/bootstrap/less/variables.less";
 @import "bootstrap/variables.less";
 @import "inc/variables.less";
-@import "../bower/bootstrap/less/mixins.less";
+@import "../node_modules/bootstrap/less/mixins.less";
 
 html, body {
-	height: 100%;	
+	height: 100%;
 }
 
 :focus {
@@ -23,7 +23,7 @@ input {
 	color: #543621;
 	font-size: 20px;
 	font-weight: 500;
-	
+
 	.placeholder(rgba(134,108,88,.85))
 }
 
@@ -35,8 +35,8 @@ input {
 	color: #543621;
 	font-size: 20px;
 	font-weight: 500;
-	line-height: 1;	
-	
+	line-height: 1;
+
 	@media (max-width: @screen-xs-max) {
 		max-width: 300px;
 	}
@@ -44,7 +44,7 @@ input {
 	&:hover {
 		opacity: 0.8;
 	}
-	
+
 	&-md {
 		height: 55px;
 		padding: 15px;
@@ -58,7 +58,7 @@ h1 {
 	font-family: @Blagovest;
 	font-weight: 400;
 	font-size: 36px;
-	
+
 	@media (min-width: @screen-sm-min) {
 		font-size: 44px;
 	}
@@ -77,18 +77,18 @@ table {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 22px;
-	
-	
+
+
 
 	tr {
 		height: 42px;
 		background-color: #c2a868;
 		color: #543621;
-		
+
 		&:nth-of-type(2n) {
 			background-color: #685343;
 			color: white;
-		}		
+		}
 	}
 
 	td {
@@ -143,7 +143,7 @@ table {
 	z-index: 15;
 	min-height: 45px;
 	background-color: #211b16;
-	
+
 	&-illusion {
 		height: 45px;
 	}
@@ -151,11 +151,11 @@ table {
 	&__humburger {
 		background: transparent;
 		border: none;
-		
+
 		@media (min-width: @screen-sm-min) {
 			display: none;
 		}
-		
+
 		.humburger {
 			position: relative;
 			display: inline-block;
@@ -163,7 +163,7 @@ table {
 			width: 25px;
 			margin: 17px 0;
 			background-color: white;
-			
+
 			&:after,
 			&:before {
 				content: "";
@@ -190,10 +190,10 @@ table {
 		display: none;
 		flex-direction: column;
 		justify-content: stretch;
-		align-items: stretch;		
+		align-items: stretch;
 		padding: 0;
 		margin: 0;
-		
+
 		&.open {
 			display: flex;
 		}
@@ -214,7 +214,7 @@ table {
 		font-weight: 400;
 		text-align: center;
 		cursor: pointer;
-		
+
 		@media (min-width: @screen-lg-min) {
 			font-size: 18px;
 		}
@@ -223,7 +223,7 @@ table {
 			display: block;
 			padding: 5px 0;
 			color: inherit;
-			
+
 			@media (min-width: @screen-sm-min) {
 				padding: 0;
 			}
@@ -237,26 +237,26 @@ table {
 	color: white;
 	font-size: 16px;
 	font-weight: 500;
-	
+
 	@media (max-width: @screen-xs-max) {
 		display: block;
 		text-align: center;
 	}
-	
+
 	@media (min-width: @screen-sm-min) {
-		height: 82px;	
+		height: 82px;
 	}
-	
+
 	@media (min-width: @screen-lg-min) {
 		font-size: 16px;
 	}
-	
+
 	&__side {
-				
+
 		@media (min-width: @screen-sm-min) {
 			display: flex;
 			flex-direction: column;
-				
+
 			&-left {
 				justify-content: space-around;
 			}
@@ -271,7 +271,7 @@ table {
 
 
 	&__phone {
-				
+
 		@media (min-width: @screen-lg-min) {
 			font-size: 23px;
 		}
@@ -296,23 +296,23 @@ table {
 }
 
 .header {
-	
+
 	background-color: rgba(133, 107, 88, 0.9);
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.39);
-	
+
 	@media (min-width: @screen-sm-min) {
-		height: 110px;	
+		height: 110px;
 	}
 
 	&__logo {
 		margin-top: 23px;
 		margin-bottom: 27px;
-		
+
 		@media (max-width: @screen-xs-max) {
 			display: block;
 			margin: 20px auto;
 		}
-		
+
 		@media (min-width: @screen-sm-min) and (max-width: (@screen-lg-min - 1px)) {
 			width: 100%;
 			height: auto;
@@ -321,7 +321,7 @@ table {
 
 	&__contacts {
 		margin-top: 15px;
-		
+
 		@media (min-width: @screen-lg-min) {
 			margin-left: 10px;
 		}
@@ -330,7 +330,7 @@ table {
 
 .main {
 	background: url(../images/bg-main.jpg) 62% center / cover no-repeat #5c3d21;
-	
+
 	&__place {
 		margin: 168px auto 188px;
 		padding: 25px 15px;
@@ -354,7 +354,7 @@ table {
 
 .smithy {
 	text-align: center;
-	
+
 	&__heading {
 		margin-top: 63px;
 	}
@@ -365,7 +365,7 @@ table {
 		font-size: 22px;
 		line-height: 27px;
 	}
-	
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -375,14 +375,14 @@ table {
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
-		
+
 		@media (min-width: @screen-sm-min) {
 			flex-direction: row;
-		
+
 			&-1 {
 				@media (max-width: (@screen-lg-min - 1px)) {
 					flex-direction: column;
-					
+
 					@supports(flex-wrap: wrap) {
 						flex-direction: row;
 						flex-wrap: wrap;
@@ -390,24 +390,24 @@ table {
 					}
 				}
 			}
-			
+
 			&-2 {
 				padding: 0 0px;
-				
+
 				@media (min-width: @screen-sm-min) and (max-width: (@screen-lg-min - 1px)) {
 					order: 2;
 				}
-				
+
 				@media (min-width: @screen-lg-min) {
-					
+
 				}
 			}
 
 			&-3 {
 				padding: 0 80px;
-				
+
 				@media (min-width: @screen-lg-min) {
-					padding: 0 240px;	
+					padding: 0 240px;
 				}
 			}
 		}
@@ -416,7 +416,7 @@ table {
 	&__item {
 		margin: 0 auto 35px;
 		cursor: pointer;
-		
+
 		@media (min-width: @screen-sm-min) {
 			width: 225px;
 		}
@@ -461,7 +461,7 @@ table {
 	background: url(../images/bg-price.jpg) center center / cover no-repeat #5c3d21;
 	color: white;
 	text-align: center;
-	
+
 	&__heading {
 		margin-top: 65px;
 		margin-bottom: 17px;
@@ -493,7 +493,7 @@ table {
 .shop {
 	padding-bottom: 50px;
 	text-align: center;
-	
+
 	&__heading {
 		margin-top: 63px;
 	}
@@ -509,14 +509,14 @@ table {
 		position: relative;
 		margin-bottom: 20px;
 		cursor: pointer;
-		
+
 		&-pr {
 			width: 100%;
-			
+
 			@media (min-width: @screen-sm-min) {
 				height: 190px;
 			}
-			
+
 			@media (min-width: @screen-lg-min) {
 				height: 255px;
 			}
@@ -543,7 +543,7 @@ table {
 				font-size: 18px;
 				line-height: 20px;
 			}
-			
+
 			@media (min-width: @screen-lg-min) {
 				font-size: 20px;
 				line-height: 24px;
@@ -582,7 +582,7 @@ table {
 
 .reviews {
 	padding-bottom: 61px;
-	
+
 	&__heading{
 		margin-top: 63px;
 		margin-bottom: 40px;
@@ -595,8 +595,8 @@ table {
 		border-radius: 4px;
 		background-color: rgba(136, 109, 89, 0.75);
 		text-align: left;
-		line-height: 22px;		
-		
+		line-height: 22px;
+
 		&:after,
 		&:before {
 			content: "";
@@ -630,7 +630,7 @@ table {
 		&-dots {
 			padding: 0;
 			margin-top: 40px;
-			
+
 			li {
 				display: inline-block;
 			}
@@ -663,7 +663,7 @@ table {
 	height: 520px;
 	color: white;
 	text-align: center;
-	
+
 	&__head {
 		position: absolute;
 		top: 0;
@@ -701,11 +701,11 @@ table {
 	width: 265px;
 	padding: 15px;
 	border-radius: 3px;
-	background-color: rgba(134,108,88,1);
+	background-color: rgba(134,108,88,1) !important;
 	font-size: 20px;
 	text-align: center;
 	color: white;
-	
+
 	p {
 		font-size: 20px;
 		font-weight: 300;
@@ -716,8 +716,8 @@ table {
 	&__heading {
 		margin: 5px auto 25px;
 	}
-	
-	input, button {
+
+	input, .btn {
 		display: block;
 		width: 100%;
 	}
@@ -739,7 +739,7 @@ table {
 	cursor: pointer;
 	background-color: #ffde8a;
 	border-radius: 50%;
-	
+
 	&:before,
 	&:after {
 		content: "";
@@ -768,11 +768,11 @@ table {
 	&:hover {
 		opacity: 1;
 	}
-} 
+}
 
 .onframe {
 	overflow: hidden;
-	
+
 	.up {
 		display: none !important;
 	}
@@ -798,7 +798,7 @@ table {
 
 @a: #ffde8a;
 @b: rgba(133,107,88, 1);
-  
+
 .back-site {
 	position: fixed;
 	left: 0;
@@ -817,7 +817,7 @@ table {
 	line-height: 20px;
 	text-align: center;
 	cursor: pointer;
-	
+
 	@media (min-width: 768px) {
 		left: auto;
 		right: 25px;
@@ -844,7 +844,7 @@ table {
 		.i-back-site-left();
 		left: 20px;
 		top: 10px;
-		
+
 		@media (min-width: 768px) {
 			.i-back-site-top();
 			top: 13px;
@@ -857,7 +857,7 @@ table {
 		.i-back-site-right();
 		right: 20px;
 		top: 10px;
-		
+
 		@media (min-width: 768px) {
 			.i-back-site-bottom();
 			top: auto;

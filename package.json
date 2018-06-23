@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "landing page",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "3"
+  },
   "devDependencies": {
     "bower": "^1.7.7",
     "gulp": "^3.9.1",

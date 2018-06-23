@@ -10,8 +10,8 @@ html
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,300&subset=latin,cyrillic")
 		link(rel="stylesheet", href="css/bootstrap.css")
 		link(rel="stylesheet", href="css/style.css")
-		link(rel="stylesheet", href="bower/slick-carousel/slick/slick.css")
-		link(rel="stylesheet", href="bower/fancybox/source/jquery.fancybox.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
 		// Yandex.Metrika counter
 		script(type="text/javascript").
@@ -85,8 +85,8 @@ html
 											.i-mail.contacts__icon
 											| pismo@gurukovki.ru
 									.contacts__side.contacts__side-right.wow.fadeInLeft(data-wow-delay="0.4s")
-										a.btn.contacts__btn.fancy(href="#call") Обратный звонок
-										a.btn.contacts__btn.fancy(href="#partners") Дружество
+										a.btn.contacts__btn(href="#call" data-fancybox) Обратный звонок
+										a.btn.contacts__btn(href="#partners" data-fancybox) Дружество
 				.container
 					.row
 						.col-xs-12
@@ -96,7 +96,7 @@ html
 								p.wow.fadeInLeft(data-wow-delay="0.4s")
 									| Потому не привыкли мы красивых слов о себе расписывать. Настоящую красоту мы из металлов создаём. Коли Вы уже про нас наслышаны, да знаете, что надобно – звонок обратный закажите, там и сговоримся.
 								.wow.fadeInUp(data-wow-delay="0.6s")
-									a.btn.fancy.btn-md.main__btn(href="#call") Сговориться
+									a.btn.btn-md.main__btn(href="#call" data-fancybox="") Сговориться
 			#smithy.smithy
 				.container
 					.row
@@ -159,7 +159,7 @@ html
 							p.smithy__desc.wow.fadeInLeft
 								| Все эти виды кованых изделий мы изготовим с учётом Ваших надобностей и пожеланий. И даже если искомого здесь не увидели, скажите нам о желании – выкуем!
 							.wow.fadeInUp
-								a.btn.fancy.btn-md.smithy__btn(href="#call") Сказать о желаемом
+								a.btn.btn-md.smithy__btn(href="#call" data-fancybox="") Сказать о желаемом
 			#price.price
 				.container
 					.row
@@ -212,7 +212,7 @@ html
 							p.price__desc.wow.fadeInLeft
 								| А замеры, доставку и монтаж изделий мы и вовсе бесплатно осуществляем. Так что ежели нужно точную стоимость рассчитать – расскажите, что да как. Высчитаем на расстоянии, а то и вовсе кузнеца учёного на замеры да расчёты пришлём бесплатно. И что ещё немаловажно – названная цена на деле не вырастет, мы слово держим
 							.wow.fadeInUp
-								a.btn.fancy.btn-md.price__btn(href="#call") Рассчитать
+								a.btn.btn-md.price__btn(href="#call" data-fancybox="") Рассчитать
 			#shop.shop
 				.container
 					.row
@@ -353,13 +353,12 @@ html
 					| Ожидайте звонка!
 		a#toTop.up(href="#")
 			//- img(src="images/up.png", alt="up", width="48", height="48")
-		script(src="bower/jquery/dist/jquery.min.js")
-		script(src="bower/slick-carousel/slick/slick.min.js")
-		script(src="bower/fancybox/source/jquery.fancybox.js")
-		script(src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js	")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js")
 		script(src="http://malsup.github.io/jquery.form.js")
-		script(src="bower/wow/dist/wow.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/ismobilejs/0.4.0/isMobile.min.js")
 		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU", type="text/javascript")
 		script(src="js/main.js")
-

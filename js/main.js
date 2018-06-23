@@ -22,10 +22,10 @@ $(document).ready(function() {
 		padding: 0
 	});
 
-	$(".fancy").click(function() {
-		$(".input--text").val("");
-		$.fancybox("#call", {padding: 0});
-	});
+	// $(".fancy").click(function() {
+	// 	// $(".input--text").val("");
+	// 	// $.fancybox.open({src: "#call"});
+	// });
 
 	// $(".shop__item").click(function() {
 	// 	var text = trim($(this).find(".shop__item-desc").text()).replace(/ +/g," ");
@@ -131,7 +131,7 @@ function trim(str, charlist) {
 				$(scrollDiv).fadeIn("slow")
 			}
 		});
-		
+
 		$(this).click(function(){
 			$("html, body").animate({scrollTop:0},"slow")
 		})
